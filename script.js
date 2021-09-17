@@ -8,7 +8,7 @@ const numberElement = document.getElementById('numbers')
 const symbolElement = document.getElementById('symbols')
 const generateElement = document.getElementById('generate')
 const passwordElement = document.getElementById('password') 
-
+const generateBtn = document.getElementById("generate") 
 
 // created object for the checkbox functions
 const randomFunc = {
@@ -18,13 +18,11 @@ const randomFunc = {
   symbol: randomSymbol
 };
 
-function myFunction() {
-  alert("Please choose a password with at least 8 and no more than 128 characters");
-}
-
-const generateBtn = document.getElementById("generate")
-
- 
+window.alert("Please choose a password with at least 8 and no more than 128 characters")
+// Function showing the settings div
+function showDiv() {  
+  document.getElementById("passwordAmount").style.display = "block";  
+};
 
 //Generate EventListener 
 generateElement.addEventListener('click', () => {
@@ -45,7 +43,7 @@ function generatePassword(upper, lower, number, symbol, length) {
   const typesCount = upper + lower + number + symbol;
 
   //console.log("typesCount: ", typesCount);
-  // Filter out the unchecked types-return only the checked types
+  // Filter out the unchecked types and return only the checked types
   const typesArray = [{ upper }, { lower }, { number }, { symbol }].filter
   (item => Object.values(item) [0]);
 
