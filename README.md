@@ -27,5 +27,5 @@ Add onlcick funtion showDiv to the button.
 
 * Javasript: The comments are in the JS file 
 
-* Second commit: add showDive in html, ad function in Javascript.
+* Second commit: add showDive in html, add function in Javascript.
 * Third commit: Fix Readme file with text errors, double check the codes, added comments in JS document.
